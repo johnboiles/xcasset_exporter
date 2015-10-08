@@ -28,6 +28,8 @@ def export_asset_bundle(source, destination, lowercase=False):
                 output_filename = imageset_name
                 if image['scale'] == '2x':
                     output_filename += '@2x'
+                elif image['scale'] == '3x':
+                    output_filename += '@3x'
                 output_filename += '%s' % extension
                 if lowercase:
                     output_filename = output_filename.lower()
